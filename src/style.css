@@ -18,12 +18,15 @@ body {
     
   }
 
+  /*HEADER*/
+
   header{
     display: flex;
     justify-content: flex-end;  
     align-self: flex-end;
-    width: calc(60% - 2rem);
-    position: fixed;
+    /*width: calc(60% - 2rem);*/
+    width: 100%;
+  
     right: 1rem;
     opacity: 0.5;
     
@@ -35,12 +38,12 @@ body {
     justify-content: end;
     align-items: center;
     background: rgb(227, 231, 234);
-    width: 100%;
+    width: 60%;
     gap: 1rem;
     height: 5vh; 
   }
 
-  
+  /*HOME*/
 
   .btn{
     border: none;
@@ -98,6 +101,85 @@ body {
     opacity: 0.8;
   }
 
+  /*MENU*/
+  .menu-container{
+    width: 100%;
+    height: 80vh;
+  }
+
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 1rem;
+
+  }
+
+  .text-container > .menu-title{
+    color: #FF7F50;
+    font-weight:500;
+    font-size: 1.2rem;
+    text-decoration: underline lightgray 1.5px;
+    text-underline-offset: 5px;
+  }
+
+  .text-container > .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .all-plates-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    gap:5vh
+  }
+  
+  .menu-title{
+    color:#FF7F50;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .name-price-container{
+    display: flex;
+    align-items: center;
+    gap:5px
+  }
+
+  .name-price-container > hr{
+    flex-grow: 1 ;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+  }
+
+  .name-price-container .plate-name{
+    margin-bottom: 0;
+  }
+
+  .plate-ingredients{
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+  }
+  
+
+
+
+  .plate-ingredients{
+    color: rgb(162, 155, 155);
+  }
+
+
+
+
+
+  /*FOOTER*/
+
 
   footer{
     height: 5vh;
@@ -105,7 +187,7 @@ body {
     margin-bottom: 2rem;
   }
 
-  hr{
+  footer > hr{
     width: 15%;
     height: 0;
     margin-left: 0;
@@ -116,3 +198,5 @@ body {
     display: flex;
     gap: 1rem;
   }
+
+
