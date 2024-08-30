@@ -1,3 +1,4 @@
+/*
 function createHeader(){
     const header = document.createElement('header');   
     const nav = createNav();
@@ -77,4 +78,5 @@ function loadPage(){
 }
 
 export default loadPage;
+*/
 
