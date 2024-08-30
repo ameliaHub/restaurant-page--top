@@ -1,3 +1,7 @@
+import menuImg from "../assets/images/comida-restaurante.jpg"
+import loadMenu from "./menu";
+
+
 function createLeftContent(){
     const leftContent = document.createElement('div');
     leftContent.classList.add('left-content');
@@ -22,7 +26,7 @@ function createRightContent(){
     rightContent.classList.add('right-content');
 
     const heroImg = document.createElement('img');
-    heroImg.src = "../assets/images/comida-restaurante.jpg"
+    heroImg.src = menuImg;
     heroImg.classList.add('hero-img');
     rightContent.appendChild(heroImg);
 
@@ -34,11 +38,16 @@ function createBtn(text){
     const btn = document.createElement('button');
     btn.classList.add('hero-btn');
     btn.textContent = text;
+
+    btn.addEventListener('click', loadMenu);
+
     return btn;
 }
 
 function loadHome(){
     const content = document.getElementById('content');
+
+    content.textContent = "";
 
     //left-content
     const leftContent = createLeftContent();
